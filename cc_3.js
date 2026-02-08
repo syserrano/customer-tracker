@@ -22,16 +22,21 @@ customers.shift()
 
 //Added new customer
 customers.push({
-    name: "Benito Anonio",
+    name: "Benito Antonio",
     email: "BB@music.com",
     purchases: ["Mic", "Keyboard", "Guitar"]
 })
 
 //Update for Kali Uchis' email
 customers[1].email = "KU@music.com"
-console.log(customers[1].email)
 
 //Update for Jungkook's purchases
 customers[0].purchases.push("Webcam")
-console.log(customers[0].purchases.forEach(purchase => {
-    console.log(purchase)}))
+
+
+customers.forEach(customer => {
+    console.log(`Customer Name: ${customer.name}`)
+    console.log(`Customer Email: ${customer.email}`)
+    console.log(`Purchases: ${customer.purchases.length}`)  
+    console.log("---")
+})
