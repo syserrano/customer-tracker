@@ -17,4 +17,11 @@ let customers = [
     }
 ]
 
+//Update for Kali Uchis' email
+customers[2].email = "KU@music.com"
 console.log(customers[2].email)
+
+//Update for Jungkook's purchases
+customers[1].purchases.push("Webcam")
+console.log(customers[1].purchases.forEach(purchase => {
+    console.log(purchase)}))
